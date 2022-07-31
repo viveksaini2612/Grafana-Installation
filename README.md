@@ -16,17 +16,26 @@ Then we add a new YUM repository for the operating system to know where to downl
 
 
 Add the lines below to grafana.repo. This setting will install to the Open Source version of Grafana.  Use nano editor command to save the file
-
+#--------------------------------------------------------------------
 [grafana]
+
 name=grafana
+
 baseurl=https://packages.grafana.com/oss/rpm
+
 repo_gpgcheck=1
+
 enabled=1
+
 gpgcheck=1
+
 gpgkey=https://packages.grafana.com/gpg.key
+
 sslverify=1
+
 sslcacert=/etc/pki/tls/certs/ca-bundle.crt
 
+#--------------------------------------------------------------------
 
 Install Grafana
 
