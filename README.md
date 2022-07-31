@@ -17,6 +17,7 @@ Then we add a new YUM repository for the operating system to know where to downl
 
 Add the lines below to grafana.repo. This setting will install to the Open Source version of Grafana.  Use nano editor command to save the file
 #--------------------------------------------------------------------
+
 [grafana]
 
 name=grafana
