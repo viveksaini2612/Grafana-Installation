@@ -8,11 +8,11 @@ Grafana Installation
 
 Upgrade all packages
 
-# sudo yum update -y
+ sudo yum update -y
 
 Then we add a new YUM repository for the operating system to know where to download Grafana. Use nano editor command to save the file
 
-# sudo nano /etc/yum.repos.d/grafana.repo
+ sudo nano /etc/yum.repos.d/grafana.repo
 
 
 Add the lines below to grafana.repo. This setting will install to the Open Source version of Grafana.  Use nano editor command to save the file
@@ -40,19 +40,19 @@ sslcacert=/etc/pki/tls/certs/ca-bundle.crt
 
 Install Grafana
 
-# sudo yum install grafana
-# sudo systemctl daemon-reload
-# sudo systemctl start grafana-server
+ sudo yum install grafana
+ sudo systemctl daemon-reload
+ sudo systemctl start grafana-server
 
 
-Start the Grafana Server.
+ Start the Grafana Server.
 
-# sudo systemctl status grafana-server
+ sudo systemctl status grafana-server
 
 
 Status output should show that grafana-server is active (running).
 
-# sudo systemctl enable grafana-server.service
+ sudo systemctl enable grafana-server.service
 
 
 Testing Grafana
